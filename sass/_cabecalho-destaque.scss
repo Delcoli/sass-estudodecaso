@@ -1,0 +1,84 @@
+/*********************************/
+/* INÍCIO DE CABEÇALHO DESTAQUES */
+/*********************************/
+@font-face{
+    font-family: openSansBold;
+    src: url('../fonts/OpenSans-ExtraBold.ttf');
+}
+
+.cabecalho-destaque{
+    background-color: #0A651A;
+    margin: 0;
+    overflow: auto;
+}
+
+.cabecalho-destaque h1{
+    float: left;
+    width: 430px;
+    padding-left: 20px;
+
+    font-family: openSansBold, arial, sans-serif, times;
+    font-size: 38px;
+    color: #ffdc19;
+}
+
+.cabecalho-destaque .busca{
+    width: 510px;
+    float: right;
+    padding-top: 30px;
+}
+.cabecalho-destaque .busca form{
+    background-color: white;
+    width: 230px;
+    padding: 5px;
+    float: right;
+    margin-right: 20px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.cabecalho-destaque .busca form input{
+    border: 0;
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+}
+.cabecalho-destaque .busca form input[type="text"]{
+    width: 200px;
+    float: left
+}
+.cabecalho-destaque .busca form input[type="image"]{
+    width: 20px;
+    float: left
+}
+
+.cabecalho-ouvidoria{
+    background-color: #00420C;
+    margin: 0;
+    overflow: auto;
+}
+.cabecalho-ouvidoria ul{
+    text-align: right;
+    margin: 0;
+    margin-right: 10px;
+    padding: 10px;
+}
+.cabecalho-ouvidoria ul li{
+    list-style: none;
+    display: inline;
+    border-right: 1px solid #999;
+    padding: 0px 10px;
+}
+.cabecalho-ouvidoria ul li:last-child{
+    border: none;
+    padding-right: 0;
+}
+.cabecalho-ouvidoria ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+/******************************/
+/* FIM DE CABEÇALHO DESTAQUES */
+/******************************/
