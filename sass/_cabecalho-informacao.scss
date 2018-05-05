@@ -1,99 +1,104 @@
-/*******************************/
-/* INÍCIO CABEÇALHO INFORMAÇÃO */
-/*******************************/
+//*******************************
+//* INÍCIO CABEÇALHO INFORMAÇÃO
+//*******************************
 .cabecalho-informacao{
-    background-color: #f1f1f1; /* definindo cor de fundo */
-    /**
-     * Este recurso deverá sempre ser usado em estruturas
-     * que possuam filhos que recebam propriedades float.
-     */
+    background-color: $corFundoCabecalhoInformacao; // definindo cor de fundo
+    //
+    // Este recurso deverá sempre ser usado em estruturas
+    // que possuam filhos que recebam propriedades float.
+    //
     overflow: auto;
-}
+    
+    //
+    // Estilos para qualquer elemento a
+    // dentro de cabecalho-informacao
+    //
+    & a{
+        color: #726060; // definindo cor do texto
+        text-decoration: none; // removendo "underline" 
+        font-size: 12px; // definindo tamanho do texto 
+        font-weight: bold // definindo estilo bold para o texto
+    }
 
-/**
- * Estilos para qualquer elemento a
- * dentro de cabecalho-informacao
- */
-.cabecalho-informacao a{
-    color: #726060; /* definindo cor do texto */
-    text-decoration: none; /* removendo "underline" */
-    font-size: 12px; /* definindo tamanho do texto */
-    font-weight: bold /* definindo estilo bold para o texto */
-}
-/**
- * utilizando o :hover apenas para que o css aplique
- * os efeitos quando o mouse estiver sobre o elemento
- */
-.cabecalho-informacao a:hover{
-    text-decoration: underline; /* mostrar o "underline" no link */
-}
+    //
+    // utilizando o :hover apenas para que o css aplique
+    // os efeitos quando o mouse estiver sobre o elemento
+    //
+    & a:hover{
+        text-decoration: underline; // mostrar o "underline" no link 
+    }
+    //
+    // Estilos para qualquer elemento ul
+    // dentro da classe cabecalho-informacao
+    //
+    & ul{
+        margin: 5px 0; // definindo margem (top/bottom) e (left/right) ao mesmo tempo 
+    }
 
-/**
- * Estilos para qualquer elemento ul
- * dentro da classe cabecalho-informacao
- */
-.cabecalho-informacao ul{
-    margin: 5px 0; /* definindo margem (top/bottom) e (left/right) ao mesmo tempo */
-}
-.cabecalho-informacao ul li{
-    float: left; /* estrutura deverá flutuar à esquerda */
-    list-style: none; /* removendo estilo de marcador padrão */
-    padding: 5px 20px; /* espaçamento interno sendo aplicado */
-    border-left: 1px solid #ccc; /* criando uma borda esquerda */
-}
-/**
- * apenas para o último elemento do seletor
- * estaremos aplicanado um estilo css
- */
-.cabecalho-informacao ul li:last-child{
-    border-right: 1px solid #ccc; /* criando uma borda direita */
-}
+    & ul li{
+        float: left; // estrutura deverá flutuar à esquerda
+        list-style: none; // removendo estilo de marcador padrão
+        padding: 5px 20px; // espaçamento interno sendo aplicado
+        border-left: 1px solid #ccc; // criando uma borda esquerda
+    }
 
-/**
- * Bandeira do Brasil
- */
-.cabecalho-informacao .informacao-brasil{
-    float:left;
-    width: 100px;
-    padding:10px 0;
-    padding-left: 20px;
+    //
+    // apenas para o último elemento do seletor
+    // estaremos aplicanado um estilo css
+    //
+    & ul li:last-child{
+        border-right: 1px solid #ccc; // criando uma borda direita
+    }
 
-    font: bold 12px/18px tahoma;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #726060; /* definindo cor do texto */
-}
-.cabecalho-informacao .informacao-brasil img{
-    display: block;
-    float: left;
-    margin-right: 10px;
+    //
+    // Bandeira do Brasil
+    //
+    & .informacao-brasil{
+        float:left;
+        width: 100px;
+        padding:10px 0;
+        padding-left: 20px;
 
-}
-.cabecalho-informacao .informacao-brasil span{
-    display: block;
-    float: left;
-    line-height: 20px;
-}
+        font: bold 12px/18px tahoma;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #726060; // definindo cor do texto
 
+        & img{
+            display: block;
+            float: left;
+            margin-right: 10px;
 
-.cabecalho-informacao .informacao-servicos{
-    float: left;
-    width: 320px;
-    padding: 0;
-}
-.cabecalho-informacao .informacao-servicos li{
-    float: left;
-}
+        }
 
-.cabecalho-informacao .informacao-links{
-    float: left;
-    width: 540px;
-    padding: 0;
-    margin: 0px;
+        & span{
+            display: block;
+            float: left;
+            line-height: 20px;
+        }
+    }
+
+    & .informacao-servicos{
+        float: left;
+        width: 320px;
+        padding: 0;
+
+        & li{
+            float: left;
+        }
+    }
+
+    & .informacao-links{
+        float: left;
+        width: 540px;
+        padding: 0;
+        margin: 0px;
+
+        & ul{
+            float: right;
+        }
+    }
 }
-.cabecalho-informacao .informacao-links ul{
-    float: right;
-}
-/*******************************/
-/* FIM DE CABEÇALHO INFORMAÇÃO */
-/*******************************/
+//*******************************
+// FIM DE CABEÇALHO INFORMAÇÃO
+//*******************************

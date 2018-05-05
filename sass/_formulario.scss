@@ -34,9 +34,9 @@
     text-transform: uppercase;
 }
 
-/**
- * Estilos CSS para tratamento de mensagens
-**/
+//
+// Estilos CSS para tratamento de mensagens
+//
 .conteudo .mensagem{
     padding: 20px;
     margin: 10px;
@@ -44,12 +44,13 @@
     background: #ccc;
     color: white;
     font-weight: bold;
-}
-.conteudo .mensagem.erro{
-    border: 1px solid darkred;
-    background-color: indianred;
-}
-.conteudo .mensagem.sucesso{
-    border: 1px solid darkgreen;
-    background-color: seagreen;
+
+    &.erro{
+        border: 1px solid darkred;
+        background-color: indianred;
+    }
+    &.sucesso{
+        border: 1px solid darkgreen;
+        background-color: seagreen;
+    }
 }

@@ -1,6 +1,7 @@
-@import "cabecalho";
-@import "cabecalho-informacao";
-@import "cabecalho-destaque";
+@import "variavel"; //ok
+@import "cabecalho"; //ok
+@import "cabecalho-informacao"; //ok
+@import "cabecalho-destaque"; //ok
 @import "corpo";
-@import "rodape";
-@import "formulario";
+@import "rodape"; //ok
+@import "formulario"; //ok
