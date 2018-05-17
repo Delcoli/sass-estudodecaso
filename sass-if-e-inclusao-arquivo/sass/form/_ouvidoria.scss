@@ -1,0 +1,6 @@
+.form-ouvidoria {
+    @if ($geraForm) {
+        @include form;
+        float: right;
+    }
+}

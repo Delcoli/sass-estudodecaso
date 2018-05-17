@@ -1,0 +1,6 @@
+.form-faq {
+    @if ($geraForm) {
+        @include form(50px);
+    }
+
+}

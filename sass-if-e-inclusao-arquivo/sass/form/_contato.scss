@@ -1,0 +1,6 @@
+.form-contato {
+    @if ($geraForm) {
+        @include form(50px);
+    }
+
+}

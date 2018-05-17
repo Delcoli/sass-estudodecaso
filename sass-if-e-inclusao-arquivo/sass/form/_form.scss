@@ -1,0 +1,7 @@
+$geraForm : false;
+
+@mixin form($padding:10px, $display:block, $tex-aling: center) {
+    padding: $padding;
+    display: $display;
+    text-align: $tex-aling;
+  }
